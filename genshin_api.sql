@@ -183,26 +183,26 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO users (username, email, password, created_at) VALUES
-('skywalker', 'skywalker@example.com', 'pw1234abc', '2024-01-05 10:15:23'),
-('aurora', 'aurora@example.com', 'pass9981', '2024-01-06 14:22:10'),
-('blitz', 'blitz@example.com', 'blitzpw55', '2024-01-07 09:01:45'),
-('zenitsu', 'zenitsu@example.com', 'ztn89123', '2024-01-08 22:17:59'),
-('keystone', 'keystone@example.com', 'key8800pw', '2024-01-09 11:45:32'),
-('moonblade', 'moonblade@example.com', 'mb_pw778', '2024-01-11 08:29:14'),
-('crimsonwolf', 'crimsonwolf@example.com', 'cw199222', '2024-01-11 12:41:05'),
-('silverfox', 'silverfox@example.com', 'sf_pw443', '2024-01-12 18:55:33'),
-('ember', 'ember@example.com', 'emB333pw', '2024-01-13 07:25:50'),
-('pixelbyte', 'pixelbyte@example.com', 'pxB9090', '2024-01-14 15:37:12'),
-('nova', 'nova@example.com', 'nvA121pw', '2024-01-15 21:11:09'),
-('dragonstrike', 'dragonstrike@example.com', 'ds_pw786', '2024-01-17 16:24:47'),
-('hikari', 'hikari@example.com', 'hkPw5551', '2024-01-18 19:58:11'),
-('obsidian', 'obsidian@example.com', 'obPwd112', '2024-01-19 10:33:40'),
-('stormwing', 'stormwing@example.com', 'sw_9912pw', '2024-01-20 13:20:28'),
-('felicity', 'felicity@example.com', 'flc_pw882', '2024-01-21 09:47:55'),
-('glacier', 'glacier@example.com', 'glc721pw', '2024-01-22 04:18:33'),
-('cipher', 'cipher@example.com', 'cp_7781', '2024-01-23 23:12:44'),
-('luminara', 'luminara@example.com', 'lm9933pw', '2024-01-24 17:16:00'),
-('vanguard', 'vanguard@example.com', 'vg_p3318', '2024-01-25 20:49:27');
+('skywalker', 'skywalker@gmail.com', 'pw1234abc', '2024-01-05 10:15:23'),
+('aurora', 'aurora@gmail.com', 'pass9981', '2024-01-06 14:22:10'),
+('blitz', 'blitz@gmail.com', 'blitzpw55', '2024-01-07 09:01:45'),
+('zenitsu', 'zenitsu@gmail.com', 'ztn89123', '2024-01-08 22:17:59'),
+('keystone', 'keystone@gmail.com', 'key8800pw', '2024-01-09 11:45:32'),
+('moonblade', 'moonblade@gmail.com', 'mb_pw778', '2024-01-11 08:29:14'),
+('crimsonwolf', 'crimsonwolf@gmail.com', 'cw199222', '2024-01-11 12:41:05'),
+('silverfox', 'silverfox@gmail.com', 'sf_pw443', '2024-01-12 18:55:33'),
+('ember', 'ember@gmail.com', 'emB333pw', '2024-01-13 07:25:50'),
+('pixelbyte', 'pixelbyte@gmail.com', 'pxB9090', '2024-01-14 15:37:12'),
+('nova', 'nova@gmail.com', 'nvA121pw', '2024-01-15 21:11:09'),
+('dragonstrike', 'dragonstrike@gmail.com', 'ds_pw786', '2024-01-17 16:24:47'),
+('hikari', 'hikari@gmail.com', 'hkPw5551', '2024-01-18 19:58:11'),
+('obsidian', 'obsidian@gmail.com', 'obPwd112', '2024-01-19 10:33:40'),
+('stormwing', 'stormwing@gmail.com', 'sw_9912pw', '2024-01-20 13:20:28'),
+('felicity', 'felicity@gmail.com', 'flc_pw882', '2024-01-21 09:47:55'),
+('glacier', 'glacier@gmail.com', 'glc721pw', '2024-01-22 04:18:33'),
+('cipher', 'cipher@gmail.com', 'cp_7781', '2024-01-23 23:12:44'),
+('luminara', 'luminara@gmail.com', 'lm9933pw', '2024-01-24 17:16:00'),
+('vanguard', 'vanguard@gmail.com', 'vg_p3318', '2024-01-25 20:49:27');
 
 
 -- --------------------------------------------------------
