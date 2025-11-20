@@ -11,10 +11,10 @@ const Artifacts = {
     });
   },
 
-  // Get student by ID
+  // Get artifact by ID
   getById: (id) => {
     return new Promise((resolve, reject) => {
-      db.query('SELECT * FROM tbl_students WHERE id = ?', [id], (err, results) => {
+      db.query('SELECT * FROM artifacts WHERE artifact_id = ?', [id], (err, results) => {
         if (err) reject(err);
         resolve(results[0]);
       });
@@ -41,7 +41,7 @@ const Artifacts = {
     return new Promise((resolve, reject) => {
       const { name, set_bonus_2pc, set_bonus_4pc, rarity } = artifactData;
       db.query(
-        'UPDATE artifacts SET firstname = ?, lastname = ?, course = ?, status = ? WHERE id = ?',
+        'UPDATE artifacts SET firstname = ?, lastname = ?, course = ?, status = ? WHERE artifact_id = ?',
         [name, set_bonus_2pc, set_bonus_4pc, rarity, id],
         (err, results) => {
           if (err) reject(err);
@@ -54,7 +54,7 @@ const Artifacts = {
 //   // Delete student
   delete: (id) => {
     return new Promise((resolve, reject) => {
-      db.query('DELETE FROM artifacts WHERE id = ?', [id], (err, results) => {
+      db.query('DELETE FROM artifacts WHERE artifact_id = ?', [id], (err, results) => {
         if (err) reject(err);
         resolve(results);
       });
