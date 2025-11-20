@@ -35,7 +35,7 @@ CREATE TABLE `artifacts` (
   `set_bonus_2pc` text DEFAULT NULL,
   `set_bonus_4pc` text DEFAULT NULL,
   `rarity` varchar(20) DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
+  `image_url` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `artifacts` (`name`, `set_bonus_2pc`, `set_bonus_4pc`, `rarity`) VALUES
@@ -110,7 +110,7 @@ CREATE TABLE `characters` (
   `element` varchar(50) NOT NULL,
   `weapon_type` varchar(50) NOT NULL,
   `rarity` int(11) DEFAULT NULL CHECK (`rarity` between 1 and 5),
-  `region` varchar(50) DEFAULT NULL,
+  `region` varchar(50) DEFAULT NULL
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -239,6 +239,7 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(100) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
+  `role` enum(`user`, `admin`) NOT NULL DEFAULT `user`,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
