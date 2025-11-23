@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2025 at 06:06 AM
+-- Generation Time: Nov 22, 2025 at 11:55 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -117,6 +117,32 @@ CREATE TABLE `builds` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `builds`
+--
+
+INSERT INTO `builds` (`build_id`, `user_id`, `character_id`, `weapon_id`, `artifact_id`, `notes`, `average_rating`, `created_at`, `updated_at`) VALUES
+(1, 'e401f8ce-c68b-11f0-9fde-bceca042f306', 'nefer', 173, 57, '\"Nefer Triple Dendro Build\"', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(2, 'e401facf-c68b-11f0-9fde-bceca042f306', 'albedo', 12, 37, '\"Best Albedo SUB DPS BUILD, PRIORITIZE DEF\"', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(3, 'd8d8cd36-c694-11f0-9fde-bceca042f306', 'hu_tao', 128, 30, 'Premier Pyro hypercarry with strongest Vaporize damage scaling.', 4.00, '2025-11-22 06:42:07', '2025-11-22 06:50:47'),
+(4, 'e401f90d-c68b-11f0-9fde-bceca042f306', 'ganyu', 215, 31, 'Extremely strong Freeze/Cryo DPS with consistent charged-shot damage.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(5, 'e401fcd6-c68b-11f0-9fde-bceca042f306', 'raiden_shogun', 123, 36, 'Top Burst DPS and battery; this is her best-in-slot setup.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(6, 'e401fb03-c68b-11f0-9fde-bceca042f306', 'nahida', 164, 41, 'Best Dendro driver; Deepwood optimizes team Dendro resistance shred.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(7, 'e401fa5e-c68b-11f0-9fde-bceca042f306', 'yelan', 216, 36, 'Strong off-field Hydro DPS that boosts team damage with her buff.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(8, 'e401fa27-c68b-11f0-9fde-bceca042f306', 'xiangling', 97, 36, 'Top-tier off-field Pyro DPS; scales extremely well with ER.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(9, 'e401facf-c68b-11f0-9fde-bceca042f306', 'zhongli', 94, 33, 'Best shielder; Tenacity gives strong team ATK buffs.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(10, 'd8d8cd36-c694-11f0-9fde-bceca042f306', 'kamisato_ayaka', 44, 31, 'Freeze DPS powerhouse with high Cryo burst damage.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(11, 'e401fb03-c68b-11f0-9fde-bceca042f306', 'kaedehara_kazuha', 40, 24, 'Provides top-level elemental damage buffs and crowd control.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(12, 'e401f9f1-c68b-11f0-9fde-bceca042f306', 'alhaitham', 43, 42, 'Strong on-field Dendro DPS with consistent spread triggers.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(13, 'e401facf-c68b-11f0-9fde-bceca042f306', 'bennett', 14, 21, 'The best ATK buffer in the game; universal support.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(14, 'e401fb9f-c68b-11f0-9fde-bceca042f306', 'xiao', 126, 39, 'Anemo plunge DPS with high burst uptime.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(15, 'e401f980-c68b-11f0-9fde-bceca042f306', 'sangonomiya_kokomi', 167, 38, 'Excellent healer and Hydro enabler with Clam burst damage.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(16, 'e401fb03-c68b-11f0-9fde-bceca042f306', 'arataki_itto', 86, 37, 'Geo hypercarry with massive DEF-scaling burst DPS.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(17, 'e401f195-c68b-11f0-9fde-bceca042f306', 'fischl', 212, 48, 'Top-tier off-field Electro battery and sustained DPS.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(18, 'e401f88a-c68b-11f0-9fde-bceca042f306', 'tartaglia', 220, 32, 'Hydro on-field driver ideal for Vaporize and International teams.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(19, 'e401fb39-c68b-11f0-9fde-bceca042f306', 'cyno', 129, 28, 'Strong Electro Hyperbloom/Aggravate DPS with high on-field uptime.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07'),
+(20, 'e401fb6b-c68b-11f0-9fde-bceca042f306', 'furina', 48, 48, 'Top-tier off-field Hydro DPS and team-wide damage buffer.', 0.00, '2025-11-22 06:42:07', '2025-11-22 06:42:07');
+
 -- --------------------------------------------------------
 
 --
@@ -139,7 +165,7 @@ CREATE TABLE `characters` (
 
 INSERT INTO `characters` (`character_id`, `name`, `element`, `weapon_type`, `rarity`, `region`, `character_rating`) VALUES
 ('aino', 'Aino', 'Hydro', 'Claymore', 4, 'Nod-Krai', 0.00),
-('albedo', 'Albedo', 'Geo', 'Sword', 5, 'Mondstadt', 0.00),
+('albedo', 'Albedo', 'Geo', 'Sword', 5, 'Mondstadt', 4.60),
 ('alhaitham', 'Alhaitham', 'Dendro', 'Sword', 5, 'Sumeru', 0.00),
 ('aloy', 'Aloy', 'Cryo', 'Bow', 5, 'None', 0.00),
 ('amber', 'Amber', 'Pyro', 'Bow', 4, 'Mondstadt', 0.00),
@@ -267,6 +293,22 @@ CREATE TABLE `ratings` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ratings`
+--
+
+INSERT INTO `ratings` (`rating_id`, `user_id`, `target_type`, `target_id`, `score`, `comment`, `created_at`, `updated_at`) VALUES
+(1, 'd8d8cd36-c694-11f0-9fde-bceca042f306', 'build', '3', 5, 'Nice! Even small EM upgrades will make your Hu Tao hit even harder. You’re definitely on the right track!', '2025-11-22 06:50:47', '2025-11-22 06:50:47'),
+(2, 'e401f7a1-c68b-11f0-9fde-bceca042f306', 'build', '3', 4, 'Great artifact rolls! Hu Tao just needs a little Crit balance, and she’s gonna melt everything.', '2025-11-22 06:50:47', '2025-11-22 06:50:47'),
+(3, 'e401f8ce-c68b-11f0-9fde-bceca042f306', 'build', '3', 3, 'Your HP and EM are looking good already—she’ll be amazing with just a few more upgrades!', '2025-11-22 06:50:47', '2025-11-22 06:50:47'),
+(4, 'e401f9b7-c68b-11f0-9fde-bceca042f306', 'build', '3', 5, 'Love the weapon choice! With some better substats, this Hu Tao will be a monster in Vaporize teams.', '2025-11-22 06:50:47', '2025-11-22 06:50:47'),
+(5, 'e401f9f1-c68b-11f0-9fde-bceca042f306', 'build', '3', 3, 'Awesome build so far! Keep farming slowly and your Hu Tao will become a real DPS carry!', '2025-11-22 06:50:47', '2025-11-22 06:50:47'),
+(6, 'e401f88a-c68b-11f0-9fde-bceca042f306', 'character', 'albedo', 5, 'Albedo may look calm, but his off-field damage makes battles feel effortless—he’s a quiet powerhouse.', '2025-11-22 06:55:03', '2025-11-22 06:55:03'),
+(7, 'e401f90d-c68b-11f0-9fde-bceca042f306', 'character', 'albedo', 5, 'His skill uptime is amazing. Once you drop the flower, he practically fights for you.', '2025-11-22 06:55:03', '2025-11-22 06:55:03'),
+(8, 'e401f195-c68b-11f0-9fde-bceca042f306', 'character', 'albedo', 5, 'Albedo shines in teams that love Elemental Mastery and reactions—he boosts others while dealing damage himself.', '2025-11-22 06:55:03', '2025-11-22 06:55:03'),
+(9, 'e401f948-c68b-11f0-9fde-bceca042f306', 'character', 'albedo', 5, 'He’s one of the few characters that can provide consistent Geo damage without needing field time.', '2025-11-22 06:55:03', '2025-11-22 06:55:03'),
+(10, 'e401f980-c68b-11f0-9fde-bceca042f306', 'character', 'albedo', 3, 'Low investment, high payoff. Even with simple gear, Albedo remains one of the most efficient supports in the game.', '2025-11-22 06:55:03', '2025-11-22 06:55:03');
 
 --
 -- Triggers `ratings`
@@ -710,13 +752,13 @@ ALTER TABLE `artifacts`
 -- AUTO_INCREMENT for table `builds`
 --
 ALTER TABLE `builds`
-  MODIFY `build_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `build_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `ratings`
 --
 ALTER TABLE `ratings`
-  MODIFY `rating_id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `rating_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `weapons`

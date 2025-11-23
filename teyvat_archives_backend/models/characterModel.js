@@ -22,13 +22,13 @@ const Character = {
 
   create: (characterData) => {
     return new Promise((resolve, reject) => {
-      const { name, element, weapon_type, rarity, region } = characterData;
+      const { character_id, name, element, weapon_type, rarity, region } = characterData;
       db.query(
-        'INSERT INTO characters (name, element, weapon_type, rarity, region) VALUES (?, ?, ?, ?, ?)',
-        [name, element, weapon_type, rarity, region],
+        'INSERT INTO characters (character_id, name, element, weapon_type, rarity, region) VALUES (?, ?, ?, ?, ?, ?)',
+        [character_id, name, element, weapon_type, rarity, region],
         (err, results) => {
           if (err) return reject(err);
-          resolve({ character_id: results.insertId, ...characterData });
+          resolve({characterData});
         }
       );
     });

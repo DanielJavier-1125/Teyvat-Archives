@@ -36,7 +36,7 @@ const Rating = {
 
     getRatingsByBuildId: (id) => {
     return new Promise((resolve, reject) => {
-      db.query('SELECT u.username as Build_Creator, c.name as Character_Name, w.name as Weapon, a.name as Artifact_Set, b.average_rating as Average_Rating FROM builds b JOIN users u ON b.user_id = u.user_id JOIN characters c ON b.character_id = c.character_id JOIN weapons w ON b.weapon_id = w.weapon_id JOIN artifacts a ON b.artifact_id = a.artifact_id WHERE build_id = ?;', [id], (err, results) => {
+      db.query('SELECT ROW_NUMBER() OVER (ORDER BY r.rating_id) AS Ratings, own.username as Build_Creator, c.name as Character_Build, w.name as Weapon, a.name as Artifacts, r.score as Score, r.comment as Comment, u.username as Rater, r.updated_at as Date_Rated FROM ratings r JOIN builds b ON r.target_id = b.build_id JOIN characters c ON b.character_id = c.character_id JOIN weapons w ON b.weapon_id = w.weapon_id JOIN artifacts a ON b.artifact_id = a.artifact_id JOIN users own ON b.user_id = own.user_id JOIN users u ON r.user_id = u.user_id WHERE target_id = ?;', [id], (err, results) => {
         if (err) reject(err);
         resolve(results);
       });

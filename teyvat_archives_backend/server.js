@@ -17,12 +17,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/users', userRoutes);
-app.use('/characters', characterRoutes);
-app.use('/weapons', weaponRoutes);
-app.use('/artifacts', artifactRoutes)
-app.use('/builds', buildRoutes);
-app.use('/ratings', ratingRoutes)
+app.use('/teyvat-archives/users', userRoutes);
+app.use('/teyvat-archives/characters', characterRoutes);
+app.use('/teyvat-archives/weapons', weaponRoutes);
+app.use('/teyvat-archives/artifacts', artifactRoutes)
+app.use('/teyvat-archives/builds', buildRoutes);
+app.use('/teyvat-archives/ratings', ratingRoutes)
 
 app.get('/protected', authenticateToken, (req, res) => {
   res.json({ message: 'This is protected data', user: req.user });

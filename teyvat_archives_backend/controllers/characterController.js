@@ -49,7 +49,7 @@ const characterController = {
   // Create new character
   addCharacter: async (req, res) => {
     try {
-      const { name, element, weapon_type, rarity, region } = req.body;
+      const { character_id, name, element, weapon_type, rarity, region } = req.body;
 
       const role = req.user.role;
       if (role != "admin") {
@@ -60,14 +60,15 @@ const characterController = {
       }
       
       // Validation
-      if (!name || !element || !weapon_type || !rarity || !region) {
+      if (!character_id || !name || !element || !weapon_type || !rarity || !region) {
         return res.status(400).json({
           success: false,
-          message: 'All fields (name, element, weapon_type, rarity, region) are required'
+          message: 'All fields (character_id, name, element, weapon_type, rarity, region) are required'
         });
       }
 
       const newCharacter = await Character.create({
+        character_id,
         name,
         element,
         weapon_type,

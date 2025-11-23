@@ -5,8 +5,8 @@ const Users = require('../models/userModel');
 const userController = {
   login: async (req, res) => {
     try {
-      const { username, password } = req.body;
-      const user = await Users.findByUsername(username);
+      const { email, password } = req.body;
+      const user = await Users.findByEmail(email);
 
       if (!user) {
         return res.status(401).json({ message: 'Invalid credentials' });
